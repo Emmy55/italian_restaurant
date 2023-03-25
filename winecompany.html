@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        video {
+            position: relative;
+            /* top: 300px; */
+            /* height: 80vh; */
+            width: 100%;
+
+
+        }
+
+        #img img {
+            width: 100%;
+            height: 50vh;
+        }
+
+        .logo img {
+            width: 20%;
+            position: relative;
+            left: 100px;
+            top: -50px;
+        }
+
+        #about {
+            position: relative;
+            /* top: -10px; */
+            height: 70vh;
+            z-index: -1;
+            background-color: antiquewhite;
+        }
+
+        #about h2 {
+            position: relative;
+
+            border-bottom: 2px solid black;
+            top: 10px;
+            width: 29%;
+            left: 25%;
+            font-size: 18px;
+            padding: 41px;
+        }
+
+        #about p {
+            width: 80%;
+            position: relative;
+            left: 10%;
+            top: 50px;
+            text-align: center;
+        }
+
+        #menu {
+            height: 130vh;
+            /* top: -90px; */
+            width: 100%;
+            position: relative;
+            background-color: antiquewhite;
+        }
+
+        #menu h3 {
+            position: relative;
+            border-bottom: 2px solid black;
+            /* top: 210px; */
+            width: 46%;
+            left: 15%;
+            font-size: 18px;
+            padding: 41px;
+
+        }
+
+        .food {
+            display: flex;
+            white-space: nowrap;
+            position: relative;
+            margin: 20px;
+            overflow-X: scroll;
+            width: 80%;
+            left: 04%;
+            /* top: 250px; */
+            /* justify-content: space-around; */
+        }
+
+        .food::-webkit-scrollbar {
+            width: 0;
+        }
+
+        /* body::-webkit-scrollbar {
+        width: 0px;
+    } */
+        a {
+            text-decoration: none;
+        }
+
+        .food1 {
+            flex-shrink: 0;
+            width: 70%;
+            background-image: url(food1.jpg);
+            height: 48vh;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin: 30px;
+            border-radius: 7px;
+        }
+
+        .food2 {
+            flex-shrink: 0;
+            background-size: contain;
+            width: 70%;
+            height: 48vh;
+            margin: 30px;
+            background-repeat: no-repeat;
+            border-radius: 7px;
+            background-image: url(food2.jpg);
+        }
+
+        .food3 {
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 70%;
+            flex-shrink: 0;
+            height: 48vh;
+            margin: 30px;
+            border-radius: 7px;
+            background-image: url(food3.jpg);
+        }
+
+        .food4 {
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 70%;
+            flex-shrink: 0;
+            height: 48vh;
+            margin: 30px;
+            border-radius: 7px;
+            background-image: url(food4.jpg);
+        }
+
+        .food5 {
+            background-image: url(food5.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            flex-shrink: 0;
+            width: 70%;
+            height: 48vh;
+            margin: 30px;
+            border-radius: 7px;
+        }
+
+        .foodleft {
+            position: relative;
+            top: 160px;
+            width: 20%;
+            font-size: 10px;
+            left: 20px;
+            z-index: 5;
+        }
+
+        .font {
+            width: 20%;
+        }
+
+        .foodright {
+            position: relative;
+            left: 92%;
+            top: -300px;
+        }
+
+        footer {
+            height: 55vh;
+            display: flex;
+            padding: 0;
+            width: 100%;
+            position: relative;
+            margin: 0;
+            overflow: hidden;
+            background-color: rgb(239, 220, 196);
+        }
+
+        .icons {
+            position: relative;
+            top: 50px;
+            width: 80%;
+            padding: 0 20px 0px 12px;
+        }
+
+
+        .ftlogo img {
+            position: relative;
+            top: 50px;
+            width: 105px;
+        }
+
+        .sup {
+            font-size: 12px;
+            position: relative;
+            top: 70px;
+        }
+
+        .romano {
+            font-size: 12px;
+            position: relative;
+            top: 70px;
+            left: 10%;
+        }
+
+        .em {
+            position: relative;
+            left: 70px;
+            top: 71px;
+        }
+
+        #em {
+            position: relative;
+            left: 70px;
+            font-size: 9.7px;
+            width: 100%;
+            top: 85px;
+        }
+
+        #email {
+            width: 150px;
+            height: 40px;
+            font-size: 12px;
+            border: none;
+            position: relative;
+            left: -6px;
+            background-color: rgb(239, 220, 196);
+        }
+
+        hr {
+            position: relative;
+            left: -6px;
+            top: -11px;
+            border: 1px solid black;
+        }
+
+        #email:focus {
+            outline: none;
+        }
+
+        #submit {
+            width: 100px;
+            height: 25px;
+            background-color: red;
+            border: none;
+            font-weight: bold;
+            position: relative;
+            left: -6px;
+            font-size: 16px;
+        }
+
+        .ent {
+            position: relative;
+            top: 40%;
+            left: -22%;
+        }
+
+        .leftimage {
+            background-image: url(left.jpg);
+            position: relative;
+            left: 20%;
+            /* top: 100px; */
+            background-repeat: no-repeat;
+            background-size: contain;
+            /* background-color: red; */
+            height: 50vh;
+            border-radius: 10px;
+            width: 30%;
+        }
+
+        .book {
+            position: relative;
+            /* top: 600px; */
+            height: 80vh;
+            background-color: antiquewhite;
+        }
+
+        #book {
+            position: relative;
+            border-bottom: 2px solid black;
+            border-bottom-width: 6%;
+            /* top:-10px; */
+            z-index: 3;
+            width: 46%;
+            left: 15%;
+            font-size: 18px;
+            padding: 41px;
+        }
+
+        .customers {
+            position: relative;
+            top: 25%;
+            /* background-color: antiquewhite; */
+            background-color: rgb(255, 145, 0);
+            height: 80vh;
+        }
+
+        #customers {
+            position: relative;
+
+            border-bottom: 2px solid black;
+            border-bottom-width: 6%;
+            /* top: 390px; */
+            width: 46%;
+            left: 15%;
+            font-size: 18px;
+            padding: 41px;
+        }
+
+        @media screen and (min-width:768px) {
+
+
+            * {
+                padding: 0;
+                margin: 0;
+                font-family: sans-serif;
+            }
+
+            #img {
+                /* background-image: url(image.jpg); */
+                background-size: contain;
+                width: 100%;
+                height: 100vh;
+                background-repeat: no-repeat;
+            }
+
+            #img img {
+                width: 100%;
+                height: 100vh;
+            }
+
+            nav {
+                position: fixed;
+                /* top: 20px; */
+                width: 100%;
+                /* left: 340px; */
+                height: 60px;
+                z-index: 8;
+                background-color: antiquewhite;
+            }
+
+            ul {
+                position: relative;
+                top: 20px;
+                left: 350px;
+            }
+
+            .logo img {
+                width: 9%;
+                position: relative;
+                left: 100px;
+                top: -50px;
+            }
+
+            li {
+                display: inline;
+                color: black;
+                font-weight: bold;
+                font-size: 18px;
+
+                padding:90px;
+            }
+            #herotext {
+                position: absolute;
+                top: 60px;
+                padding: 120px;
+                font-size: 50px;
+                /* color: antiquewhite; */
+            }
+            #order {
+                width: 10%;
+                align-items: center;
+                text-align: center;
+                height: 10px;
+                padding: 22px;
+                font-weight: bolder;
+                border-radius: 40px;
+                position: absolute;
+                top: 520px;
+                left: 120px;
+                color: black;
+                background-color: antiquewhite;
+            }
+            #order:hover {
+                background-color: black;
+                color: antiquewhite;
+            }
+            li:hover {
+                color: rgba(26, 24, 22, 0.546);
+            }
+            #heropara {
+                position: absolute;
+                top: 390px;
+                left: 120px;
+                width: 40%;
+                font-weight: bold;
+                line-height: 30px;
+            }
+            #about {
+                position: relative;
+                /* top: -10px; */
+                height: 70vh;
+                z-index: -1;
+                background-color: antiquewhite;
+            }
+
+            #about h2 {
+                position: relative;
+                font-size: 30px;
+                padding: 50px;
+                border-bottom: 2px solid black;
+                width: 13%;
+                top: 110px;
+                left: 41%;
+            }
+
+            #about p {
+                width: 50%;
+                position: relative;
+                left: 26%;
+                top: 150px;
+                text-align: center;
+            }
+
+            #menu {
+                height: 230vh;
+                width: 100%;
+                position: relative;
+                background-color: antiquewhite;
+            }
+
+            #menu h3 {
+                position: relative;
+                font-size: 30px;
+                padding: 45px;
+                border-bottom: 2px solid black;
+                width: 21%;
+                top: 20px;
+                left: 39%;
+
+            }
+
+            .food {
+                display: flex;
+                white-space: nowrap;
+                position: relative;
+                margin: 20px;
+                height: 70vh;
+                overflow-x: scroll;
+                width: 80%;
+                left: 09%;
+                /* top: 250px; */
+                /* justify-content: space-around; */
+            }
+
+            /* .food::-webkit-scrollbar {
+                width: 0;
+            } */
+
+            /* body::-webkit-scrollbar {
+        width: 0px;
+    } */
+            a {
+                text-decoration: none;
+            }
+
+            .food1 {
+                flex-shrink: 0;
+                width: 35%;
+                background-image: url(food1.jpg);
+                height: 48vh;
+                background-size: contain;
+                margin: 30px;
+                background-repeat: no-repeat;
+                border-radius: 7px;
+            }
+
+            .food2 {
+                flex-shrink: 0;
+                background-size: contain;
+                width: 35%;
+                height: 48vh;
+                margin: 30px;
+                background-repeat: no-repeat;
+                border-radius: 7px;
+                background-image: url(food2.jpg);
+            }
+
+            .food3 {
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 35%;
+                flex-shrink: 0;
+                height: 48vh;
+                margin: 30px;
+                border-radius: 7px;
+                background-image: url(food3.jpg);
+            }
+
+            .food4 {
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 35%;
+                flex-shrink: 0;
+                height: 48vh;
+                margin: 30px;
+                border-radius: 7px;
+                background-image: url(food4.jpg);
+            }
+
+            .food5 {
+                background-image: url(food5.jpg);
+                background-size: contain;
+                background-repeat: no-repeat;
+                flex-shrink: 0;
+                width: 35%;
+                height: 48vh;
+                margin: 30px;
+                border-radius: 7px;
+            }
+
+            video {
+                position: relative;
+                /* top: 300px; */
+                /* height: 80vh; */
+                width: 100%;
+
+            }
+
+            #book {
+                position: relative;
+                font-size: 30px;
+                padding: 45px;
+                border-bottom: 2px solid black;
+                width: 19%;
+                border-bottom-width: 6%;
+                /* top: 20px; */
+                z-index: 3;
+                left: 41%;
+            }
+
+            footer {
+                height: 55vh;
+                display: flex;
+                padding: 0;
+                width: 100%;
+                position: relative;
+                margin: 0;
+                overflow: hidden;
+                background-color: rgb(239, 220, 196);
+            }
+
+            .icons {
+                width: 80%;
+                padding: 0px 0px 0px 55px;
+            }
+
+
+            .ftlogo img {
+                width: 55%;
+            }
+
+            .sup {
+                position: relative;
+                top: 70px;
+            }
+
+            .romano {
+                position: relative;
+                top: 70px;
+                left: 10%;
+            }
+
+            .em {
+                position: relative;
+                left: 230px;
+                top: 71px;
+            }
+
+            #em {
+                position: relative;
+                left: 270px;
+                top: 47px;
+                font-size: 14px;
+            }
+
+            #email {
+                width: 300px;
+                height: 40px;
+                font-size: 15px;
+                border: none;
+                background-color: rgb(239, 220, 196);
+            }
+
+            hr {
+                position: relative;
+                top: -11px;
+                border: 1px solid black;
+            }
+
+            #submit {
+                width: 150px;
+                height: 50px;
+                background-color: red;
+                border: none;
+                font-weight: bold;
+                font-size: 16px;
+            }
+
+            .ent {
+                position: relative;
+                top: 40%;
+                left: -2.1%;
+            }
+            .food h2 {
+                position: relative;
+                top: 300px;
+                text-align: center;
+            }
+            .food p {
+                position: relative;
+                top: 320px;
+                width: 10%;
+                /* text-align: center; */
+            }
+            .leftimage {
+                background-image: url(left.jpg);
+                position: relative;
+                left: 20%;
+                top: 100px;
+                background-repeat: no-repeat;
+                background-size: contain;
+                /* background-color: red; */
+                height: 50vh;
+                border-radius: 10px;
+                width: 30%;
+            }
+
+            .left {
+                position: relative;
+                left: -130px;
+                top: 75px;
+            }
+
+            .foodleft {
+                position: relative;
+                top: 200px;
+                left: 50px;
+                z-index: 5;
+            }
+
+            .foodright {
+                position: relative;
+                left: 95%;
+                top: -340px;
+            }
+
+            .right {
+                position: relative;
+                left: 190px;
+                top: -101px;
+            }
+
+            .rightcont img {
+                position: relative;
+                left: -15px;
+                width: 40%;
+            }
+
+            .rightcont {
+                width: 20%;
+                text-align: center;
+                position: relative;
+                left: 62%;
+                top: -250px;
+            }
+
+            .customers {
+                position: relative;
+                top: 25%;
+                background-color: antiquewhite;
+                height: 80vh;
+            }
+
+            #customers {
+                position: relative;
+                font-size: 30px;
+                padding: 50px;
+                border-bottom: 2px solid black;
+                width: 21%;
+                border-bottom-width: 6%;
+                /* top: 390px; */
+                left: 39%;
+            }
+
+            .book {
+                position: relative;
+                /* top: 600px; */
+                /* margin-top: 170px; */
+                height: 120vh;
+                background-color: antiquewhite;
+            }
+
+            #email:focus {
+                outline: none;
+            }
+
+            .center {
+                position: relative;
+                left: 28%;
+                width: 60%;
+                top: 50px;
+            }
+
+            #dt {
+                height: 35px;
+                width: 34%;
+            }
+
+            #tm {
+                height: 35px;
+                width: 34%;
+                left: 46%;
+                top: -56px;
+                position: relative;
+            }
+
+            #tml {
+                position: relative;
+                top: -75px;
+                left: 46%;
+            }
+
+            #people {
+                width: 81%;
+                height: 40px;
+                position: relative;
+                /* top: -50px; */
+            }
+
+            #peoplel {
+                position: relative;
+                top: -63px;
+            }
+
+            #firnm {
+                width: 34%;
+                height: 40px;
+            }
+
+            #firml {
+                position: relative;
+                top: -86px;
+            }
+
+            #lsname {
+                position: relative;
+                top: -166px;
+                left: 47%;
+                width: 50%;
+            }
+
+            #lsname [type='text'] {
+                width: 68%;
+                height: 40px;
+            }
+
+            #emal {
+                position: relative;
+                width: 50%;
+                top: -190px;
+            }
+
+            #emal [type='email'] {
+                width: 68%;
+                height: 40px;
+            }
+
+            #pho {
+                position: relative;
+                top: -272px;
+                width: 50%;
+                left: 47%;
+            }
+
+            #pho [type='tel'] {
+                width: 68%;
+                height: 40px;
+            }
+
+            .rem {
+                position: relative;
+                top: -290px;
+            }
+
+            #check {
+                font-size: 14px;
+                position: relative;
+                top: -2px;
+            }
+
+            textarea:focus {
+                outline: none;
+            }
+
+            .rem [type='submit'] {
+                height: 40px;
+                width: 82%;
+                font-weight: bolder;
+                background-color: black;
+                color: white;
+                border: none;
+            }
+        }
+
+        @media screen and (min-width:1000px) {
+            * {
+                padding: 0;
+                margin: 0;
+                font-family: sans-serif;
+            }
+
+            video {
+                position: relative;
+                /* top: 300px; */
+                /* height: 80vh; */
+                width: 100%;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="hero">
+        <nav>
+
+            <ul>
+
+                <a href="#hero">
+                    <li>Home</li>
+                </a>
+                <a href="#about">
+                    <li>About</li>
+                </a>
+                <a href="#menu">
+                    <li>Menu</li>
+                </a>
+                <a href="#book">
+                    <li>Book</li>
+                </a>
+            </ul>
+            <div class="logo"><a href="winecompany.html">
+                    <img src="italianlogo.png" alt="">
+                </a>
+            </div>
+        </nav>
+        <h1 id="herotext">Hungry? You're in <br><br>
+            the right place
+        </h1>
+        <p id="heropara">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet officiis blanditiis sapiente doloribus? Laboriosam, accusantium quaerat maiores obcaecati in aliquid!</p>
+        <a id="order" href="#menu">Menu</a>
+        <div id="img">
+            <img src="image.jpg" alt="" />
+        </div>
+    </div>
+    <div id="about">
+        <h2>ABOUT US</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+            nesciunt est hic. Pariatur deserunt voluptas laborum quod! Nesciunt,
+            voluptas voluptatum. Lorem, ipsum dolor sit amet consectetur adipisicing
+            elit. Doloremque laborum minima iste nam et praesentium exercitationem!
+            Assumenda deserunt iure numquam minus, atque a aperiam doloremque.
+            Doloribus tenetur facilis mollitia? Asperiores magnam magni iste iusto?
+            Explicabo excepturi sequi aliquid quas error. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Atque eum perspiciatis ratione voluptas
+            expedita voluptatibus nobis nihil quos distinctio facere.
+        </p>
+    </div>
+
+    <div id="menu">
+        <h3>FROM OUR MENU</h3>
+        <div class="font">
+            <i class="fa-solid fa-chevron-left fa-2x foodleft"></i>
+        </div>
+        <div class="foo">
+
+            <div class="food" data-current="0">
+
+                <div class="food1">
+                    <h2>Lasagne alla Bolognese.</h2>
+                    <p>Lorem ipsum dolor ewr Nobis quo sit necessitatibus!</p>
+                </div>
+                <div class="food2">
+                    <h2>Fettuccine al Pomodoro. ...</h2>
+                    <p>Lorem ipsum dolor ewr Nobis quo sit necessitatibus!</p>
+                </div>
+                <div class="food3">
+                    <h2>Gnocchi di Patate. ...</h2>
+                    <p>Lorem ipsum dolor ewr Nobis quo sit necessitatibus!</p>
+                </div>
+                <div class="food4">
+                    <h2>Melanzane alla Parmigiana. ...</h2>
+                    <p>Lorem ipsum dolor ewr Nobis quo sit necessitatibus!</p>
+                </div>
+                <div class="food5">
+                    <h2>Pollo alla Cacciatora. ...</h2>
+                    <p>Lorem ipsum dolor ewr Nobis quo sit necessitatibus!</p>
+                </div>
+            </div>
+        </div>
+        <i class="fa-solid fa-chevron-right fa-2x foodright"></i>
+        <video src="video1.mp4" loop autoplay muted></video>
+    </div>
+    <div class="book">
+        <h4 id="book">BOOK A TABLE</h4>
+        <div class="center">
+            <form action="">
+                <label for="">Date *</label> <br> <br>
+                <input id="dt" type="date">
+                <br>
+                <label id="tml" for="tm">Time *</label> <br>
+                <input id="tm" type="time">
+                <br><br>
+                <div id="peoplel">
+                    <label for="people">People *</label>
+                    <br><br>
+                    <select name="cars" id="people">
+                        <option value="Customer">4 persons</option>
+                        <option value="Customer1">3 persons </option>
+                        <option value="Customer2">2 persons</option>
+                        <option value="Customer3">Family & Friends</option>
+                    </select>
+                </div>
+                <br><br>
+                <div id="firml">
+                    <label for="">First name *</label><br>
+                    <br>
+                    <input id="firnm" type="text">
+                </div>
+                <div id="lsname">
+                    <label for="">Last name *</label>
+                    <br><br>
+                    <input type="text">
+                </div> <br><br>
+                <div id="emal">
+                    <label for="">Email *</label>
+                    <br><br>
+                    <input type="email">
+                </div>
+                <div id="pho">
+                    <label for="">Phone *</label>
+                    <br><br>
+                    <input type="tel">
+                </div>
+                <br><br>
+                <div class="rem">
+                    <label id="text" for="textarea">Comments(optional)</label><br>
+                    <br>
+                    <textarea name="" id="" cols="92" rows="05"></textarea>
+                    <br>
+                    <br>
+                    <input type="checkbox">
+                    <label id="check" for="">Subscribe me to the newsletter</label> <br>
+                    <br><br>
+                    <input type="submit" value="Book a table">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="customers">
+        <h5 id="customers">OUR CUSTOMERS</h5>
+        <div class="leftimage">
+            <!-- <img src="left.jpg" alt=""> -->
+        </div>
+        <div class="rightcont">
+            <i class="fa-solid fa-chevron-left fa-2x left"></i>
+            <img src="quote.png" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim accusantium, error necessitatibus
+                voluptatum cum vitae odio dolorum rem eligendi et!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos
+                laboriosam odio dignissimos id ipsam nihil!
+            </p>
+            <i class="fa-solid fa-chevron-right fa-2x right"></i>
+
+        </div>
+
+    </div>
+    </div>
+    <footer>
+        <div class="ftlogo">
+            <img src="italianlogo.png" alt="">
+
+            <div class="icons">
+                <i class="fa-1x fb fa-brands fa-facebook"></i> &nbsp;
+                <i class="fa-1x fa-brands fa-instagram"></i> &nbsp;
+                <i class="fa-1x fa-brands fa-twitter"></i> &nbsp;
+                <i class="fa-1x fa-brands fa-youtube"></i> &nbsp;
+            </div>
+        </div>
+        <div class="sup">
+            <p><strong>Support</strong><br><br>
+                Contact Us <br><br>
+                FAQ<br><br>
+                Downloads <br><br>
+                Locate A Dealer <br><br>
+                Product Registration <br><br>
+                Spare Parts
+            </p>
+        </div>
+        <div class="romano">
+            <p><Strong>Romano</Strong> <br><br>
+                About Romano <br><br>
+                Romano Design <br><br>
+                Careers <br><br>
+                Newsroom <br><br>
+                Romano Access
+            </p>
+        </div>
+        <div class="subs">
+            <i class="fa-2x em fa-solid fa-envelope"></i>
+
+            <pre id="em">Stay up to date on the latest from Romano</pre>
+        </div>
+        <div class="ent">
+            <input id="email" placeholder="Enter your e-mail address" type="email"> <br><br>
+            <hr><br>
+            <input id="submit" value="Subscribe" type="submit">
+        </div>
+    </footer>
+
+
+    <script src="https://kit.fontawesome.com/9da17deac8.js" crossorigin="anonymous"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // it's a div, that holds your news
+            // it holds ul with news in li elements
+            var div = document.querySelector(".foo");
+            div.addEventListener("scroll", function () {
+                var max_scroll = this.scrollHeight - this.clientHeight;
+                var current_scroll = this.scrollTop;
+                var bottom = 100;
+                if (current_scroll + bottom >= max_scroll) {
+                    var ul = document.querySelector(".food")[0];
+                    var current = parseInt(ul.dataset.current, 10);
+                    var li = document.querySelector(".food1")[current];
+                    var new_li = li.cloneNode(true);
+                    ul.appendChild(new_li);
+                    ul.dataset.current = current + 1;
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

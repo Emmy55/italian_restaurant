@@ -1,4 +1,4 @@
- @media screen and (max-width:600px) and (max-width:600px) {
+ @media screen and (min-width:320px) {
             * {
                 padding: 0;
                 margin: 0;
@@ -52,6 +52,7 @@
                 position: fixed;
                 z-index: 7;
                 height: 50px;
+                width: 100%;
                 top: 0px;
                 background-color: antiquewhite;
             }
@@ -319,7 +320,7 @@
                 border: none;
                 position: relative;
                 left: -6px;
-                background-color: rgb(239, 220, 196);
+                background-color: rgba(239, 220, 196, 0);
             }
 
             hr {
@@ -610,7 +611,7 @@
                 position: relative;
                 left: 56%;
                 font-size: 10px;
-                top: -160px;
+                top: -67%;
             }
             .fa-arrow-left{
                 position: relative;

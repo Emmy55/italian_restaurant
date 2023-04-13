@@ -76,7 +76,7 @@
 
         let parm = {email_id: document.getElementById("emai").value}
         function sendSubscribe() {
-            emailjs.send("service_4phwras","template_kmvdds5", parm)
+            emailjs.send("service_4phwras","template_kmvdds4", parm)
         .then((res) => {
             document.getElementById("email").value = ""
             alert("Your message was sent Successfully");

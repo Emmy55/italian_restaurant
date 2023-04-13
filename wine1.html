@@ -6,21 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="moderncss.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="moderncss.css">
     <link rel="stylesheet" href="mobile.css">
     <link rel="stylesheet" href="tabview.css">
     <link rel="stylesheet" href="laptop1.css">
     <link rel="stylesheet" href="laptop2.css">
     <link rel="shortcut icon" href="italianlogo.png" type="image/x-icon">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        
     </script>
     <script type="text/javascript">
         (function () {
             emailjs.init("faF_VMx1pdjIl4FjE");
         })();
     </script>
+    
+
 </head>
 
 <body>
@@ -244,12 +247,108 @@
             </a>
         </div>
     </footer>
+    <!-- <script src="alljs.js"></script> -->
 
 
     <script src="https://kit.fontawesome.com/9da17deac8.js" crossorigin="anonymous"></script>
-    <script src="alljs.js"></script>
 
-    
+    <script>
+          btn = document.querySelector(".burger")
+        navlist = document.querySelector("ul")
+        bod = document.querySelector('#head')
+        btn1 = document.querySelector(".burger1")
+        
+        btn.addEventListener('click', () => {
+            navlist.classList.toggle("clipped").checked
+            // btn.innerHTML = btn1
+        })
+
+        ul = document.getElementById("hamburger")
+        ul.addEventListener('click', () => {
+            navlist.classList.toggle("clipped").checked = false
+            // enable = false
+        })
+        bod.addEventListener('click', () => {
+            navlist.classList.toggle("clipped").checked = false
+        })
+
+
+    </script>
+    <script>
+       
+
+
+      
+
+        function sendMail() {
+            fname = document.getElementById("name").value
+            sname = document.getElementById("lname").value
+            let params = {
+                name: `${fname} ${sname}`,
+                email: document.getElementById("email").value,
+                date: document.getElementById("dt").value,
+                time: document.getElementById("tm").value,
+                people: document.getElementById("people").value,
+                phone: document.getElementById("phone").value,
+                comment: document.getElementById("comment").value,
+                subscribe: document.getElementById("subscribe").value,
+            }
+            const serviceID = "service_4phwras"
+            const templateID = "template_q5so3b8"
+            let allname = `${fname} ${sname}`
+            emailjs
+                .send(serviceID, templateID, params)
+                .then((res) => {
+                    allname = ""
+                    document.getElementById("email").value = ""
+                    document.getElementById("dt").value = ""
+                    document.getElementById("tm").value = ""
+                    document.getElementById("people").value = ""
+                    document.getElementById("phone").value = ""
+                    document.getElementById("comment").value = ""
+                    document.getElementById("subscribe").value = ""
+                    console.log(res)
+                    alert("Your message sent Successfully");
+                }
+                )
+                .catch((err) => console.log(err));
+        }
+
+        let parm = {email_id: document.getElementById("emai").value}
+        function sendSubscribe() {
+            emailjs.send("service_4phwras","template_kmvdds4", parm)
+        .then((res) => {
+            document.getElementById("email").value = ""
+            alert("Your message was sent Successfully");
+        }
+        )
+        }
+       
+    </script>
+    <script>
+        
+    </script>
+    <script>
+          const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    document.querySelectorAll('.animated')[0].classList.add('fadeInTop')
+                    document.querySelectorAll('.animated')[1].classList.add('fadeInLeft')
+                    document.querySelectorAll('.animated')[2].classList.add('fadeInTop')
+                    document.querySelectorAll('.animated')[3].classList.add('fadeInLeft')
+                    document.querySelectorAll('.animated')[4].classList.add('fadeInRight')
+                    document.querySelectorAll('.animated')[5].classList.add('fadeInTop')
+                    document.querySelectorAll('.animated')[5].classList.add('fadeInLeft')
+                    document.querySelectorAll('.animated')[6].classList.add('fadeInTop')
+
+                }
+            })
+
+        })
+
+        observer.observe(document.querySelector(".container"))
+
+    </script>
 </body>
 
 </html>

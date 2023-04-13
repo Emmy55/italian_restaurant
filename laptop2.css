@@ -1,0 +1,572 @@
+@media screen and (min-width:1200px) {
+    #color {
+        height: 0px;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: sans-serif;
+    }
+
+    #img {
+        /* background-image: url(image.jpg); */
+        background-size: contain;
+        width: 100%;
+        height: 100vh;
+        background-repeat: no-repeat;
+    }
+
+    #img img {
+        display: block;
+        width: 100%;
+        height: 100vh;
+    }
+
+    nav {
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        /* left: 340px; */
+        height: 67px;
+        z-index: 8;
+        background-color: antiquewhite;
+    }
+
+    ul {
+        position: relative;
+        top: -160px;
+        /* margin-top: 16px; */
+        clip-path: none;
+        background: none;
+        left: 13%;
+    }
+
+    .logo img {
+        width: 9%;
+        position: relative;
+        z-index: 11;
+        left: 110px;
+        top: -30px;
+    }
+
+    li {
+        display: inline;
+        color: black;
+        font-weight: bold;
+        font-size: 18px;
+        z-index: 2;
+        /* background-color: red; */
+        padding: 0px 3% 0px 100px;
+    }
+
+    #herotext {
+        position: absolute;
+        top: 60px;
+        padding: 120px;
+        font-size: 50px;
+        width: 40%;
+        /* color: antiquewhite; */
+    }
+
+    .heroleft {
+        position: relative;
+        left: -9px;
+        top: -40px;
+    }
+
+    #order {
+        color: black;
+        position: relative;
+        top: -8px;
+        /* left: .2%; */
+        padding: 12px 90px 12px 78;
+        /* background-color: red; */
+    }
+
+    #order:hover {
+        color: antiquewhite;
+    }
+
+    #order1 {
+        width: 20%;
+        align-items: center;
+        text-align: center;
+        height: 10px;
+        padding: 22px;
+        font-weight: bolder;
+        border-radius: 40px;
+        position: absolute;
+        top: 550px;
+        left: 120px;
+        color: black;
+        background-color: antiquewhite;
+    }
+
+    #order1:hover {
+        background-color: black;
+        color: antiquewhite;
+    }
+
+    li:hover {
+        color: rgba(26, 24, 22, 0.546);
+    }
+
+    #heropara {
+        position: absolute;
+        top: 375px;
+        left: 120px;
+        width: 40%;
+        font-weight: bold;
+        line-height: 30px;
+    }
+
+    #about {
+        position: relative;
+        /* top: -10px; */
+        height: 70vh;
+        z-index: -1;
+        background-color: antiquewhite;
+    }
+
+    #about h2 {
+        position: relative;
+        font-size: 30px;
+        padding: 50px;
+        border-bottom: 2px solid black;
+        width: 13%;
+        top: 110px;
+        left: 41%;
+    }
+
+    #about p {
+        width: 50%;
+        position: relative;
+        left: 26%;
+        top: 150px;
+        text-align: center;
+    }
+
+    #menu {
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        background-color: antiquewhite;
+    }
+
+    #menu h3 {
+        position: relative;
+        font-size: 30px;
+        padding: 45px;
+        border-bottom: 2px solid black;
+        width: 21%;
+        top: 20px;
+        left: 39%;
+
+    }
+
+    .food {
+        display: flex;
+        white-space: nowrap;
+        position: relative;
+        margin: 20px;
+        height: 70vh;
+        overflow-x: scroll;
+        width: 80%;
+        left: 09%;
+        /* top: 250px; */
+        /* justify-content: space-around; */
+    }
+
+    /* .food::-webkit-scrollbar {
+        width: 0;
+    } */
+
+    /* body::-webkit-scrollbar {
+width: 0px;
+} */
+    a {
+        text-decoration: none;
+    }
+
+    .food1 {
+        flex-shrink: 0;
+        width: 35%;
+        background-image: url(food1.jpg);
+        height: 48vh;
+        background-size: contain;
+        margin: 30px;
+        background-repeat: no-repeat;
+        border-radius: 7px;
+    }
+
+    .food2 {
+        flex-shrink: 0;
+        background-size: contain;
+        width: 35%;
+        height: 48vh;
+        margin: 30px;
+        background-repeat: no-repeat;
+        border-radius: 7px;
+        background-image: url(food2.jpg);
+    }
+
+    .food3 {
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 35%;
+        flex-shrink: 0;
+        height: 48vh;
+        margin: 30px;
+        border-radius: 7px;
+        background-image: url(food3.jpg);
+    }
+
+    .food4 {
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 35%;
+        flex-shrink: 0;
+        height: 48vh;
+        margin: 30px;
+        border-radius: 7px;
+        background-image: url(food4.jpg);
+    }
+
+    .food5 {
+        background-image: url(food5.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        flex-shrink: 0;
+        width: 35%;
+        height: 48vh;
+        margin: 30px;
+        border-radius: 7px;
+    }
+
+    video {
+        position: relative;
+        top: -3px;
+        /* height: 80vh; */
+        width: 100%;
+
+    }
+
+    #book {
+        position: relative;
+        font-size: 30px;
+        padding: 45px;
+        border-bottom: 2px solid black;
+        width: 19%;
+        border-bottom-width: 6%;
+        /* top: 20px; */
+        z-index: 3;
+        left: 41%;
+    }
+
+    footer {
+        height: 55vh;
+        display: flex;
+        padding: 0;
+        width: 100%;
+        position: relative;
+        margin: 0;
+        overflow: hidden;
+        background-color: rgb(239, 220, 196);
+    }
+
+    .icons {
+        width: 80%;
+        padding: 0px 0px 0px 55px;
+    }
+
+
+    .ftlogo img {
+        width: 55%;
+    }
+
+    .sup {
+        position: relative;
+        font-size: 17px;
+        top: 70px;
+    }
+
+    .romano {
+        position: relative;
+        top: 70px;
+        font-size: 17px;
+        left: 10%;
+    }
+
+    .em {
+        position: relative;
+        left: -60px;
+        top: 66px;
+    }
+
+    #em {
+        position: relative;
+        left: -20px;
+        top: 41px;
+        font-size: 14px;
+    }
+
+    .fa-arrow-left{
+        position: relative;
+        top: 200px;
+        left: 20%;
+        font-size: 40px;
+    }
+    .fa-arrow-right{
+        left: 69pc;
+        top: 200px;
+        position: relative;
+        float: right;
+        font-size: 40px;
+    }
+    body {
+        background-color: antiquewhite;
+    }
+    footer #emai {
+        width: 300px;
+        height: 40px;
+        font-size: 15px;
+        border: none;
+        background-color:rgb(239, 220, 196);
+    }
+
+    hr {
+        position: relative;
+        top: -11px;
+        width: 70%;
+        border: 1px solid black;
+    }
+
+    #submit {
+        width: 150px;
+        height: 50px;
+        background-color: rgb(0, 0, 0);
+        border: none;
+        color: antiquewhite;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .ent {
+        position: relative;
+        top: 40%;
+        left: -3.4%;
+    }
+
+    .food h2 {
+        position: relative;
+        top: 300px;
+        right: 0;
+        text-align: center;
+    }
+
+    .food p {
+        left: 0;
+        position: relative;
+        top: 320px;
+        width: 10%;
+        /* text-align: center; */
+    }
+
+    .leftimage {
+        background-image: url(left.jpg);
+        position: relative;
+        left: 20%;
+        top: 100px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        /* background-color: red; */
+        height: 50vh;
+        border-radius: 10px;
+        width: 30%;
+    }
+
+    .left {
+        position: relative;
+        left: -130px;
+        top: 75px;
+    }
+
+    .foodleft {
+        position: relative;
+        top: 200px;
+        left: 50px;
+        z-index: 5;
+    }
+
+    .foodright {
+        position: relative;
+        left: 95%;
+        top: -340px;
+    }
+
+    .right {
+        position: relative;
+        left: 190px;
+        top: -101px;
+    }
+
+    .rightcont img {
+        position: relative;
+        left: -15px;
+        width: 40%;
+    }
+
+    .rightcont {
+        width: 20%;
+        text-align: center;
+        position: relative;
+        left: 62%;
+        top: -230px;
+    }
+
+    .rightcont p {
+        font-size: 17px;
+    }
+
+    .customers {
+        position: relative;
+        top: 25%;
+        background-color: antiquewhite;
+        height: 90vh;
+    }
+
+    #customers {
+        position: relative;
+        font-size: 30px;
+        padding: 50px;
+        border-bottom: 2px solid black;
+        width: 21%;
+        border-bottom-width: 6%;
+        /* top: 390px; */
+        left: 39%;
+    }
+
+    .book {
+        position: relative;
+        /* top: 600px; */
+        /* margin-top: 170px; */
+        height: 120vh;
+        background-color: antiquewhite;
+    }
+
+    footer #emai:focus {
+        outline: none;
+    }
+
+    .center {
+        position: relative;
+        left: 28%;
+        width: 60%;
+        top: 50px;
+    }
+
+    #dt {
+        height: 35px;
+        width: 34%;
+    }
+
+    #tm {
+        height: 35px;
+        width: 34%;
+        left: 46%;
+        top: -56px;
+        position: relative;
+    }
+
+    #tml {
+        position: relative;
+        top: -75px;
+        left: 46%;
+    }
+
+    #people {
+        width: 81%;
+        height: 40px;
+        position: relative;
+        /* top: -50px; */
+    }
+
+    #peoplel {
+        position: relative;
+        top: -63px;
+    }
+
+    #firnm {
+        width: 34%;
+        height: 40px;
+    }
+
+    #firml {
+        position: relative;
+        top: -86px;
+    }
+
+    #lsname {
+        position: relative;
+        top: -166px;
+        left: 47%;
+        width: 50%;
+    }
+
+    #lsname [type='text'] {
+        width: 68%;
+        height: 40px;
+    }
+
+    #emal {
+        position: relative;
+        width: 50%;
+        top: -190px;
+    }
+
+    #emal [type='email'] {
+        width: 68%;
+        height: 40px;
+    }
+
+    #pho {
+        position: relative;
+        top: -272px;
+        width: 50%;
+        left: 47%;
+    }
+
+    #pho [type='tel'] {
+        width: 68%;
+        height: 40px;
+    }
+
+    .rem {
+        position: relative;
+        top: -290px;
+    }
+
+    #check {
+        font-size: 14px;
+        position: relative;
+        top: -2px;
+    }
+
+    textarea:focus {
+        outline: none;
+    }
+
+    .rem [type='submit'] {
+        height: 40px;
+        width: 82%;
+        font-weight: bolder;
+        background-color: black;
+        color: white;
+        border: none;
+    }
+}

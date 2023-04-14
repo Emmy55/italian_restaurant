@@ -1262,6 +1262,127 @@ width: 0px;
         left: 12%;
         /* text-align: center; */
     }
+    .food {
+        display: flex;
+        white-space: nowrap;
+        position: relative;
+        margin: 20px;
+        height: 50pc;
+        overflow-x: scroll;
+        width: 80%;
+        left: 09%;
+        /* top: 250px; */
+        /* justify-content: space-around; */
+    }
+
+    /* .food::-webkit-scrollbar {
+        width: 0;
+    } */
+
+    /* body::-webkit-scrollbar {
+width: 0px;
+} */
+    a {
+        text-decoration: none;
+    }
+
+    .food1 {
+        flex-shrink: 0;
+        width: 35%;
+        background-image: url(food1.jpg);
+        height: 48vh;
+        background-size: contain;
+        margin: 30px;
+        background-repeat: no-repeat;
+        border-radius: 7px;
+    }
+
+    .food2 {
+        flex-shrink: 0;
+        background-size: contain;
+        width: 35%;
+        height: 48vh;
+        margin: 30px;
+        background-repeat: no-repeat;
+        border-radius: 7px;
+        background-image: url(food2.jpg);
+    }
+
+    .food3 {
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 35%;
+        flex-shrink: 0;
+        height: 48vh;
+        margin: 30px;
+        border-radius: 7px;
+        background-image: url(food3.jpg);
+    }
+
+    .food4 {
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 35%;
+        flex-shrink: 0;
+        height: 48vh;
+        margin: 30px;
+        border-radius: 7px;
+        background-image: url(food4.jpg);
+    }
+
+    .food5 {
+        background-image: url(food5.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        flex-shrink: 0;
+        width: 35%;
+        height: 48vh;
+        margin: 30px;
+        border-radius: 7px;
+    }
+    
+    .food h2 {
+        position: relative;
+        top: 14pc;
+        font-size: 25px;
+        right: 0;
+        text-align: center;
+    }
+
+    .food p {
+        left: 9%;
+        position: relative;
+        top: 14.5pc;
+        font-size: 12px;
+        width: 10%;
+        /* text-align: center; */
+    }
+    .fa-arrow-left{
+        position: relative;
+        top: 10.2pc;
+        left: 20%;
+        font-size: 40px;
+    }
+    .fa-arrow-right{
+        left: 380%;
+        top: 10.2pc;
+        position: relative;
+        float: right;
+        font-size: 40px;
+    }
+    footer #emai {
+        width: 150px;
+        height: 40px;
+        font-size: 9px;
+        border: none;
+        position: relative;
+        left: -6px;
+        background-color: rgba(239, 220, 196, 0);
+    }
+    .ent{
+        position: relative;
+        left: 4.4%;
+    }
 }
 
 

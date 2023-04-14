@@ -755,13 +755,13 @@
     }
     .fa-arrow-left{
         position: relative;
-        top: 200px;
+        top: 13.2pc;
         left: 20%;
         font-size: 40px;
     }
     .fa-arrow-right{
         left: 380%;
-        top: 200px;
+        top: 13.2pc;
         position: relative;
         float: right;
         font-size: 40px;

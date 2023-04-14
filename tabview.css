@@ -94,6 +94,7 @@
     }
 
     #about {
+        overflow-x: hidden;
         position: relative;
         /* top: -10px; */
         height: 20pc;
@@ -106,7 +107,7 @@
         text-align: center;
         /* border-bottom: 2px solid black; */
         top: 10px;
-        width: 100%;
+        width: 41%;
         /* left: 25%; */
         font-size: 25px;
         /* padding: 11px; */
@@ -137,6 +138,7 @@
     }
     #menu {
         height: 34pc;
+        overflow-x: hidden;
         /* top: -90px; */
         width: 100%;
         position: relative;
@@ -166,6 +168,7 @@
         white-space: nowrap;
         position: relative;
         margin: 20px;
+        overflow-x: hidden;
         overflow-X: scroll;
         width: 80%;
         left: 7.2%;
@@ -396,6 +399,7 @@ width: 0px;
     }
 
     .customers {
+        overflow-x: hidden;
         position: relative;
         top: 25%;
         background-color: antiquewhite;
@@ -475,6 +479,7 @@ width: 0px;
     #hero {
         background-color: antiquewhite;
         height: 24pc;
+        overflow-x: hidden;
     }
 
     .food h2 {
@@ -497,6 +502,7 @@ width: 0px;
     .center {
         position: relative;
         left: 16%;
+        overflow-x: hidden;
         width: 83%;
         top: 20px;
     }

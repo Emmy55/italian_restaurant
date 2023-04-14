@@ -20,7 +20,9 @@
                 transition: 0.4s all;
                 clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
             }
-
+            html {
+                scroll-behavior: smooth;
+              }
             ul {
                 position: absolute;
                 background-color: rgb(255, 255, 255);
@@ -30,7 +32,7 @@
                 top: -10px;
                 border-radius: 0px 10px 10px 0px;
                 right: 0;
-                height: 92vh;
+                height: 95vh;
                 width: 80%;
                 text-align: center;
                 transition: .5s all;

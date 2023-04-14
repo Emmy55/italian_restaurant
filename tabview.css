@@ -106,10 +106,10 @@
         text-align: center;
         /* border-bottom: 2px solid black; */
         top: 10px;
-        width: 41%;
-        left: 25%;
+        width: 100%;
+        /* left: 25%; */
         font-size: 25px;
-        padding: 11px;
+        /* padding: 11px; */
     }
 
     #about p {
@@ -136,7 +136,7 @@
         background-color: antiquewhite;
     }
     #menu {
-        height: 31pc;
+        height: 34pc;
         /* top: -90px; */
         width: 100%;
         position: relative;
@@ -366,8 +366,9 @@ width: 0px;
 
     .book {
         position: relative;
+        margin-top: 120px;
         /* top: 600px; */
-        margin: 0;
+        /* margin: 0; */
         overflow: hidden;
         height: 45pc;
         background-color: antiquewhite;
@@ -482,7 +483,9 @@ width: 0px;
         font-size: 30px;
         text-align: center;
     }
-
+    html {
+        scroll-behavior: smooth;
+      }
     .food p {
         position: relative;
         top: 20.4pc;

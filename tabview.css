@@ -354,12 +354,12 @@ width: 0px;
     .leftimage {
         background-image: url(left.jpg);
         position: relative;
-        left: 03%;
+        left: 10%;
         top: 0px;
         background-repeat: no-repeat;
         background-size: contain;
         /* background-color: red; */
-        height: 30vh;
+        height: 10pc;
         border-radius: 10px;
         width: 46%;
     }
@@ -369,7 +369,7 @@ width: 0px;
         /* top: 600px; */
         margin: 0;
         overflow: hidden;
-        height: 120vh;
+        height: 45pc;
         background-color: antiquewhite;
     }
 
@@ -478,14 +478,14 @@ width: 0px;
 
     .food h2 {
         position: relative;
-        top: 320px;
+        top: 19pc;
         font-size: 30px;
         text-align: center;
     }
 
     .food p {
         position: relative;
-        top: 330px;
+        top: 20.4pc;
         font-size: 19px;
         /* width: 10%; */
         text-align: center;
@@ -559,19 +559,19 @@ width: 0px;
 
     #emal [type='email'] {
         width: 68%;
-        height: 40px;
+        height: 31px;
     }
 
     #pho {
         position: relative;
-        top: -262px;
+        top: -253.9px;
         width: 50%;
         left: 47%;
     }
 
     #pho [type='tel'] {
         width: 68%;
-        height: 40px;
+        height: 31px;
     }
 
     .rem {
@@ -610,7 +610,7 @@ width: 0px;
         position: relative;
         left: 50%;
         font-size: 10px;
-        top: -160px;
+        top: -66%;
     }
 
     .subs {

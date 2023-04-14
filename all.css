@@ -740,8 +740,8 @@
         text-align: center;
         /* border-bottom: 2px solid black; */
         top: 10px;
-        width: 100%;
-        /* left: 25%; */
+        width: 40%;
+        left: 30%;
         font-size: 25px;
         /* padding: 11px; */
     }
@@ -803,7 +803,7 @@
         overflow-X: scroll;
         width: 80%;
         left: 7.2%;
-        height: 76vh;
+        height: 27pc;
         /* top: 250px; */
         /* justify-content: space-around; */
     }
@@ -823,7 +823,7 @@ width: 0px;
         flex-shrink: 0;
         width: 70%;
         background-image: url(food1.jpg);
-        height: 48vh;
+        /* height: 24pc; */
         background-size: contain;
         background-repeat: no-repeat;
         margin: 30px;
@@ -834,7 +834,7 @@ width: 0px;
         flex-shrink: 0;
         background-size: contain;
         width: 70%;
-        height: 48vh;
+        /* height: 48vh; */
         margin: 30px;
         background-repeat: no-repeat;
         border-radius: 7px;
@@ -846,7 +846,7 @@ width: 0px;
         background-repeat: no-repeat;
         width: 70%;
         flex-shrink: 0;
-        height: 48vh;
+        /* height: 48vh; */
         margin: 30px;
         border-radius: 7px;
         background-image: url(food3.jpg);
@@ -857,7 +857,7 @@ width: 0px;
         background-repeat: no-repeat;
         width: 70%;
         flex-shrink: 0;
-        height: 48vh;
+        /* height: 48vh; */
         margin: 30px;
         border-radius: 7px;
         background-image: url(food4.jpg);
@@ -869,7 +869,7 @@ width: 0px;
         background-repeat: no-repeat;
         flex-shrink: 0;
         width: 70%;
-        height: 48vh;
+        /* height: 48vh; */
         margin: 30px;
         border-radius: 7px;
     }
@@ -1399,6 +1399,7 @@ width: 0px;
         position: relative;
         /* top: -10px; */
         height: 70vh;
+        margin-top: 130px;
         z-index: -1;
         background-color: antiquewhite;
     }

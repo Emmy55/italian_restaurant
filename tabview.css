@@ -105,12 +105,11 @@
 
     #about h2 {
         position: relative;
-        left: 60%;
-        /* text-align: center; */
+        text-align: center;
         /* border-bottom: 2px solid black; */
         top: 10px;
-        width: 40%;
-        /* left: 25%; */
+        width: 41%;
+        left: 25%;
         font-size: 25px;
         /* padding: 11px; */
     }

@@ -30,7 +30,7 @@
                 top: -10px;
                 border-radius: 0px 10px 10px 0px;
                 right: 0;
-                height: 35pc;
+                height: 92vh;
                 width: 80%;
                 text-align: center;
                 transition: .5s all;
@@ -111,7 +111,7 @@
             #about {
                 position: relative;
                 /* top: -10px; */
-                height: 25pc;
+                height: 70vh;
                 z-index: -1;
                 background-color: antiquewhite;
                 
@@ -136,10 +136,11 @@
                 text-align: center;
             }
             body{
+                overflow-x: hidden;
                 background-color: antiquewhite;
             }
             #menu {
-                height: 30pc;
+                height: 81vh;
                 /* top: -90px; */
                 width: 100%;
                 position: relative;
@@ -262,7 +263,7 @@
             }
 
             footer {
-                height: 15pc;
+                height: 55vh;
                 display: flex;
                 padding: 0;
                 width: 100%;
@@ -350,7 +351,7 @@
             .ent {
                 position: relative;
                 top: 39%;
-                right: 32.7%;
+                right: 37%;
             }
            
             .leftimage {
@@ -371,7 +372,7 @@
                 /* top: 600px; */
                 margin: 0;
                 overflow: hidden;
-                height: 42pc;
+                height: 120vh;
                 background-color: antiquewhite;
             }
 
@@ -400,7 +401,7 @@
                 position: relative;
                 top: 25%;
                 background-color: antiquewhite;
-                height: 15pc;
+                height: 40vh;
             }
 
             #customers {
@@ -521,7 +522,7 @@
 
             #people {
                 width: 81%;
-                height: 40px;
+                height: 34px;
                 position: relative;
                 /* top: -50px; */
             }
@@ -533,7 +534,7 @@
 
             #firnm {
                 width: 34%;
-                height: 31px;
+                height: 34px;
             }
 
             #firml {
@@ -543,37 +544,37 @@
 
             #lsname {
                 position: relative;
-                top: -155px;
+                top: -160px;
                 left: 47%;
                 width: 50%;
             }
 
             #lsname [type='text'] {
                 width: 68%;
-                height: 31px;
+                height: 34px;
             }
 
             #emal {
                 position: relative;
                 width: 50%;
-                top: -185px;
+                top: -184px;
             }
 
             #emal [type='email'] {
                 width: 68%;
-                height: 40px;
+                height: 34px;
             }
 
             #pho {
                 position: relative;
-                top: -262px;
+                top: -258px;
                 width: 50%;
                 left: 47%;
             }
 
             #pho [type='tel'] {
                 width: 68%;
-                height: 40px;
+                height: 34px;
             }
 
             .rem {
@@ -611,7 +612,7 @@
                 position: relative;
                 left: 56%;
                 font-size: 8px;
-                top: -57%;
+                top: -67%;
             }
             .fa-arrow-left{
                 position: relative;
@@ -627,5 +628,3 @@
                 font-size: 20px;
             }
         }
-
-        

@@ -86,7 +86,7 @@
         position: relative;
         /* left: 41%; */
         z-index: 8;
-        top: -15px;
+        top: -16px;
     }
 
     .logo a img:hover {
@@ -96,7 +96,7 @@
     #about {
         position: relative;
         /* top: -10px; */
-        height: 70vh;
+        height: 20pc;
         z-index: -1;
         background-color: antiquewhite;
     }
@@ -136,7 +136,7 @@
         background-color: antiquewhite;
     }
     #menu {
-        height: 101vh;
+        height: 31pc;
         /* top: -90px; */
         width: 100%;
         position: relative;
@@ -260,7 +260,7 @@ width: 0px;
     }
 
     footer {
-        height: 55vh;
+        height: 18pc;
         display: flex;
         padding: 0;
         width: 100%;
@@ -398,7 +398,7 @@ width: 0px;
         position: relative;
         top: 25%;
         background-color: antiquewhite;
-        height: 40vh;
+        height: 16pc;
     }
 
     #customers {
@@ -473,7 +473,7 @@ width: 0px;
 
     #hero {
         background-color: antiquewhite;
-        height: 80vh;
+        height: 24pc;
     }
 
     .food h2 {

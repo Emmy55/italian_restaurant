@@ -329,6 +329,7 @@ width: 0px;
         font-size: 40px;
     }
     body {
+        overflow-x: hidden;
         background-color: antiquewhite;
     }
     footer #emai {

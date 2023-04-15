@@ -661,7 +661,7 @@
         top: -10px;
         border-radius: 0px 10px 10px 0px;
         right: 0;
-        height: 92vh;
+        height: 120vh;
         width: 80%;
         text-align: center;
         transition: .5s all;
@@ -981,11 +981,11 @@ width: 0px;
         font-size: 16px;
     }
 
-    .ent {
+    /* .ent {
         position: relative;
         top: 43%;
-        left: 0%;
-    }
+        left: 4%;
+    } */
 
     .leftimage {
         background-image: url(left.jpg);

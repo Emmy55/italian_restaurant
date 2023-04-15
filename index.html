@@ -485,6 +485,7 @@
         btn.addEventListener('click', () => {
 
             navlist.classList.toggle("clipped").checked
+            document.getElementByTagName('body')[0].stopScroll();
 
             // btn.innerHTML = btn1
 

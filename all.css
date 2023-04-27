@@ -3,10 +3,6 @@
     margin: 0;
     font-family: sans-serif;
 }
- body {
-        transform: scale(0.8);
-        transform-origin: 0 0;
-    }
 li {
     /* display: block; */
     color: black;

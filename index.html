@@ -172,9 +172,9 @@
 
             <!-- <i class="fa-solid fa-chevron-left fa-2x foodleft"></i> -->
 
-            <i class="fa-sharp fa-solid fa-arrow-left"></i>
+            <i class="fa-sharp fa-solid fa-arrow-left" id="prev"></i>
 
-            <i class="fa-sharp fa-solid fa-arrow-right"></i>
+            <i class="fa-sharp fa-solid fa-arrow-right" id="next"></i>
 
                     
 
@@ -467,6 +467,25 @@
     </footer>
 
     <!-- <script src="alljs.js"></script> -->
+    <script>
+        const scrollLeft = document.querySelector("#prev");
+        const scrollRight = document.querySelector("#next");
+        const scrollContent = document.querySelector(".food");
+  
+        scrollLeft.addEventListener("click", () => {
+          scrollContent.scrollBy({
+            left: -400,
+            behavior: "smooth",
+          });
+        });
+  
+        scrollRight.addEventListener("click", () => {
+          scrollContent.scrollBy({
+            left: 400,
+            behavior: "smooth",
+          });
+        });
+      </script>
 
     <script src="https://kit.fontawesome.com/9da17deac8.js" crossorigin="anonymous"></script>
 

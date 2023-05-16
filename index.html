@@ -32,7 +32,7 @@
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
 
-        
+
 
     </script>
 
@@ -46,7 +46,7 @@
 
     </script> -->
 
-    
+
 
 </head>
 
@@ -59,8 +59,8 @@
         <nav>
 
             <div class="animate__animated animate__bounceInLeft logo">
-                
-<a href="./">
+
+                <a href="./">
 
                     <img src="italianlogo.png" alt="">
 
@@ -94,7 +94,7 @@
 
                 </a>
 
-                
+
 
             </ul>
 
@@ -120,11 +120,11 @@
 
             </h1>
 
-            <p id="heropara">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet officiis blanditiis sapiente
+            <p id="heropara">"Romano" transports you to Italy with authentic cuisine, handmade pasta, wood-fired
+                pizzas, and a charming ambiance. A taste of Italy awaits!</p>
 
-                doloribus? Laboriosam, accusantium quaerat maiores obcaecati in aliquid!</p>
-
-            <button class="animate__animated animate__bounceInLeft " id="order1" onclick="location.href='#menu'"  type='button'>Menu</button>
+            <button class="animate__animated animate__bounceInLeft " id="order1" onclick="location.href='#menu'"
+                type='button'>Menu</button>
 
         </div>
 
@@ -142,23 +142,12 @@
 
         <p class="animated">
 
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-
-            nesciunt est hic. Pariatur deserunt voluptas laborum quod! Nesciunt,
-
-            voluptas voluptatum. Lorem, ipsum dolor sit amet consectetur adipisicing
-
-            elit. Doloremque laborum minima iste nam et praesentium exercitationem!
-
-            Assumenda deserunt iure numquam minus, atque a aperiam doloremque.
-
-            Doloribus tenetur facilis mollitia? Asperiores magnam magni iste iusto?
-
-            Explicabo excepturi sequi aliquid quas error. Lorem ipsum dolor sit amet
-
-            consectetur adipisicing elit. Atque eum perspiciatis ratione voluptas
-
-            expedita voluptatibus nobis nihil quos distinctio facere.
+            The Romano restaurant is a cozy Italian eatery located in the heart of the city. As soon as you walk in,
+            you're greeted with warm and friendly service. The menu offers a wide selection of traditional Italian
+            dishes, from antipasti to homemade pasta and wood-fired pizza. Their signature dish, the Bistecca alla
+            Fiorentina, is a must-try for meat lovers. The wine list is extensive, featuring a variety of Italian and
+            international wines to complement your meal. The atmosphere is relaxed and inviting, making it the perfect
+            spot for a romantic date or a family dinner. Don't forget to save room for their delicious tiramisu!
 
         </p>
 
@@ -176,7 +165,7 @@
 
             <i class="fa-sharp fa-solid fa-arrow-right" id="next"></i>
 
-                    
+
 
         </div>
 
@@ -186,41 +175,41 @@
 
                 <div class="food1">
 
-                    <h2>Lasagne alla Bolognese</h2>
+                    <h2>Caprese Salad</h2>
 
-                    <p>Lorem ipsum dolor ewr Nobis quo sit necess!</p>
+                    <p>Fresh tomatoes, mozzarella with balsamic.</p>
 
                 </div>
 
                 <div class="food2">
 
-                    <h2>Fettuccine al Pomodoro</h2>
+                    <h2>Lasagna Bolognese</h2>
 
-                    <p>Lorem ipsum dolor ewr Nobis quo sit necess!</p>
+                    <p>Layers of pasta, meat sauce, and cheese.</p>
 
                 </div>
 
                 <div class="food3">
 
-                    <h2>Gnocchi di Patate</h2>
+                    <h2>Spaghetti Carbonara</h2>
 
-                    <p>Lorem ipsum dolor ewr Nobis quo sit necess!</p>
+                    <p>Rich, creamy sauce with bacon and parmesan</p>
 
                 </div>
 
                 <div class="food4">
 
-                    <h2>Melanzane alla Parmigian</h2>
+                    <h2>Carbonara Pasta</h2>
 
-                    <p>Lorem ipsum dolor ewr Nobis quo sit necess!</p>
+                    <p>Creamy egg, pancetta, and pecorino cheese.</p>
 
                 </div>
 
                 <div class="food5">
 
-                    <h2>Pollo alla Cacciatora</h2>
+                    <h2>Fettuccine Alfredo</h2>
 
-                    <p>Lorem ipsum dolor ewr Nobis quo sit necess!</p>
+                    <p>Creamy, cheesy, and oh-so-satisfying.</p>
 
                 </div>
 
@@ -362,13 +351,9 @@
 
             <img src="quote.png" alt="">
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim accusantium, error necessitatibus
-
-                voluptatum cum vitae odio dolorum rem eligendi et!
-
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos
-
-                laboriosam odio dignissimos id ipsam nihil!
+            <p>Romano offers a delectable array of Italian dishes. From creamy pasta carbonara to flavorful margherita
+                pizza, each bite is a culinary delight. Indulge in tiramisu or cannoli for a sweet finish. With
+                attentive service and a warm ambiance.
 
             </p>
 
@@ -448,17 +433,18 @@
 
         <div class="ent">
 
-           <form action="">
+            <form action="">
 
-            <input id="emai" placeholder="Enter your e-mail" type="email"> <br><br>
+                <input id="emai" placeholder="Enter your e-mail" type="email"> <br><br>
 
-            <hr><br>
+                <hr><br>
 
-            <a href="#">
+                <a href="#">
 
-                <input onclick="sendSubscribe()" class="animate__animated animate__bounceInLeft" id="submit" value="Subscribe" type="submit">
+                    <input onclick="sendSubscribe()" class="animate__animated animate__bounceInLeft" id="submit"
+                        value="Subscribe" type="submit">
 
-           </form>
+            </form>
 
             </a>
 
@@ -471,21 +457,21 @@
         const scrollLeft = document.querySelector("#prev");
         const scrollRight = document.querySelector("#next");
         const scrollContent = document.querySelector(".food");
-  
+
         scrollLeft.addEventListener("click", () => {
-          scrollContent.scrollBy({
-            left: -400,
-            behavior: "smooth",
-          });
+            scrollContent.scrollBy({
+                left: -400,
+                behavior: "smooth",
+            });
         });
-  
+
         scrollRight.addEventListener("click", () => {
-          scrollContent.scrollBy({
-            left: 400,
-            behavior: "smooth",
-          });
+            scrollContent.scrollBy({
+                left: 400,
+                behavior: "smooth",
+            });
         });
-      </script>
+    </script>
 
     <script src="https://kit.fontawesome.com/9da17deac8.js" crossorigin="anonymous"></script>
 
@@ -499,14 +485,14 @@
 
         btn1 = document.querySelector(".burger1")
 
-        
+
 
         btn.addEventListener('click', () => {
 
             navlist.classList.toggle("clipped").checked
             document.getElementByTagName('body')[0].stopScroll();
 
-            
+
 
         })
 
@@ -516,7 +502,7 @@
 
             navlist.classList.toggle("clipped").checked = false
 
-            
+
 
         })
 
@@ -530,9 +516,9 @@
 
     <script>
 
-       
 
-      
+
+
 
         function sendMail() {
 
@@ -600,37 +586,37 @@
 
         }
 
-        let parm = {email_id: document.getElementById("emai").value}
+        let parm = { email_id: document.getElementById("emai").value }
 
         function sendSubscribe() {
 
-            emailjs.send("service_4phwras","template_kmvdds4", parm)
+            emailjs.send("service_4phwras", "template_kmvdds4", parm)
 
-        .then((res) => {
+                .then((res) => {
 
-            document.getElementById("email").value = ""
+                    document.getElementById("email").value = ""
 
-            alert("Your message was sent Successfully");
+                    alert("Your message was sent Successfully");
+
+                }
+
+                )
 
         }
 
-        )
 
-        }
-
-       
 
     </script>
 
     <script>
 
-        
+
 
     </script>
 
     <script>
 
-          const observer = new IntersectionObserver(entries => {
+        const observer = new IntersectionObserver(entries => {
 
             entries.forEach(entry => {
 

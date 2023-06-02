@@ -2349,7 +2349,7 @@ width: 0px;
 }
 
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1200px) and (max-width: 1440px) {
     #color {
         height: 0px;
     }
